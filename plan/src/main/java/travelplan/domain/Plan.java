@@ -1,109 +1,114 @@
 package travelplan.domain;
 
-import java.time.LocalDate;
-import java.util.Date;
-import java.util.List;
-import javax.persistence.*;
-import lombok.Data;
-import travelplan.PlanApplication;
 import travelplan.domain.PlanCreated;
-import travelplan.domain.PlanDeleted;
 import travelplan.domain.PlanUpdated;
-import travelplan.domain.RecommendationCreated;
+import travelplan.domain.PlanDeleted;
+import travelplan.PlanApplication;
+import javax.persistence.*;
+import java.util.List;
+import lombok.Data;
+import java.util.Date;
+import java.time.LocalDate;
+
 
 @Entity
-@Table(name = "Plan_table")
+@Table(name="Plan_table")
 @Data
+
 //<<< DDD / Aggregate Root
-public class Plan {
+public class Plan  {
 
+
+    
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    
+    
+    
+    
     private Long id;
-
+    
+    
+    
+    
     private Long memberId;
-
+    
+    
+    
+    
     private String location;
-
-    private Date travelDate;
-
+    
+    
+    
+    
+    private Date startDay;
+    
+    
+    
+    
+    private Date endDay;
+    
+    
+    
+    
     private Integer budget;
-
+    
+    
+    
+    
     private Integer groupSize;
-
+    
+    
+    
+    
     private String details;
 
-    private String aiRecommendation;
-
     @PostPersist
-    public void onPostPersist() {
-        RecommendationCreated recommendationCreated = new RecommendationCreated(
-            this
-        );
-        recommendationCreated.publishAfterCommit();
+    public void onPostPersist(){
+
 
         PlanCreated planCreated = new PlanCreated(this);
         planCreated.publishAfterCommit();
-    }
 
+    
+    }
     @PostUpdate
-    public void onPostUpdate() {
+    public void onPostUpdate(){
+
+
         PlanUpdated planUpdated = new PlanUpdated(this);
         planUpdated.publishAfterCommit();
-    }
 
+    
+    }
     @PreRemove
-    public void onPreRemove() {
+    public void onPreRemove(){
+
+
         PlanDeleted planDeleted = new PlanDeleted(this);
         planDeleted.publishAfterCommit();
+
+    
     }
 
-    public static PlanRepository repository() {
-        PlanRepository planRepository = PlanApplication.applicationContext.getBean(
-            PlanRepository.class
-        );
+    public static PlanRepository repository(){
+        PlanRepository planRepository = PlanApplication.applicationContext.getBean(PlanRepository.class);
         return planRepository;
     }
 
-    //<<< Clean Arch / Port Method
-    public void requireRecommendation() {
-        //implement business logic here:
-
-        RecommendationRequired recommendationRequired = new RecommendationRequired(
-            this
-        );
-        recommendationRequired.publishAfterCommit();
+    public void require recommendation(){
+        //
+    }
+    public void require recommendation(){
+        //
+    }
+    public void require recommendation(){
+        //
     }
 
-    //>>> Clean Arch / Port Method
 
-    //<<< Clean Arch / Port Method
-    public static void createRecommendation(TokenDecreased tokenDecreased) {
-        //implement business logic here:
 
-        /** Example 1:  new item 
-        Plan plan = new Plan();
-        repository().save(plan);
 
-        RecommendationCreated recommendationCreated = new RecommendationCreated(plan);
-        recommendationCreated.publishAfterCommit();
-        */
-
-        /** Example 2:  finding and process
-        
-        repository().findById(tokenDecreased.get???()).ifPresent(plan->{
-            
-            plan // do something
-            repository().save(plan);
-
-            RecommendationCreated recommendationCreated = new RecommendationCreated(plan);
-            recommendationCreated.publishAfterCommit();
-
-         });
-        */
-
-    }
-    //>>> Clean Arch / Port Method
 
 }
 //>>> DDD / Aggregate Root

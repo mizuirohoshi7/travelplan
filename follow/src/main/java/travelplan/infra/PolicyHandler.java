@@ -18,7 +18,40 @@ import travelplan.domain.*;
 public class PolicyHandler {
 
     @Autowired
-    FollowRepository followRepository;
+    Repository Repository;
+
+    @Autowired
+    Repository Repository;
+
+    @Autowired
+    Repository Repository;
+
+    @Autowired
+    Repository Repository;
+
+    @Autowired
+    Repository Repository;
+
+    @Autowired
+    Repository Repository;
+
+    @Autowired
+    Repository Repository;
+
+    @Autowired
+    Repository Repository;
+
+    @Autowired
+    Repository Repository;
+
+    @Autowired
+    Repository Repository;
+
+    @Autowired
+    Repository Repository;
+
+    @Autowired
+    Repository Repository;
 
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString) {}

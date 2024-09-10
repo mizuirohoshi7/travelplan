@@ -12,9 +12,9 @@ public class PlanCreated extends AbstractEvent {
     private Long id;
     private Long memberId;
     private String location;
-    private Date travelDate;
+    private Date startDay;
+    private Date endDay;
     private Integer budget;
     private Integer groupSize;
     private String details;
-    private String aiRecommendation;
 }

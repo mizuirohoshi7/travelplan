@@ -18,11 +18,11 @@
         <v-card-text>
             <Number label="MemberId" v-model="value.memberId" :editMode="editMode" :inputUI="''"/>
             <String label="Location" v-model="value.location" :editMode="editMode" :inputUI="''"/>
-            <Date label="TravelDate" v-model="value.travelDate" :editMode="editMode" :inputUI="''"/>
+            <Date label="StartDay" v-model="value.startDay" :editMode="editMode" :inputUI="''"/>
+            <Date label="EndDay" v-model="value.endDay" :editMode="editMode" :inputUI="''"/>
             <Number label="Budget" v-model="value.budget" :editMode="editMode" :inputUI="''"/>
             <Number label="GroupSize" v-model="value.groupSize" :editMode="editMode" :inputUI="''"/>
             <String label="Details" v-model="value.details" :editMode="editMode" :inputUI="''"/>
-            <String label="AiRecommendation" v-model="value.aiRecommendation" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
         <v-card-actions>
@@ -77,14 +77,6 @@
         </v-card-actions>
         <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn
-                v-if="!editMode"
-                color="primary"
-                text
-                @click="requireRecommendation"
-            >
-                RequireRecommendation
-            </v-btn>
         </v-card-actions>
 
         <v-snackbar
@@ -219,10 +211,48 @@
             change(){
                 this.$emit('input', this.value);
             },
-            async requireRecommendation() {
+            async () {
                 try {
                     if(!this.offline) {
-                        var temp = await axios.put(axios.fixUrl(this.value._links['/require'].href))
+                        var temp = await axios.put(axios.fixUrl(this.value._links[''].href))
+                        for(var k in temp.data) {
+                            this.value[k]=temp.data[k];
+                        }
+                    }
+
+                    this.editMode = false;
+                } catch(e) {
+                    this.snackbar.status = true
+                    if(e.response && e.response.data.message) {
+                        this.snackbar.text = e.response.data.message
+                    } else {
+                        this.snackbar.text = e
+                    }
+                }
+            },
+            async () {
+                try {
+                    if(!this.offline) {
+                        var temp = await axios.put(axios.fixUrl(this.value._links[''].href))
+                        for(var k in temp.data) {
+                            this.value[k]=temp.data[k];
+                        }
+                    }
+
+                    this.editMode = false;
+                } catch(e) {
+                    this.snackbar.status = true
+                    if(e.response && e.response.data.message) {
+                        this.snackbar.text = e.response.data.message
+                    } else {
+                        this.snackbar.text = e
+                    }
+                }
+            },
+            async () {
+                try {
+                    if(!this.offline) {
+                        var temp = await axios.put(axios.fixUrl(this.value._links[''].href))
                         for(var k in temp.data) {
                             this.value[k]=temp.data[k];
                         }

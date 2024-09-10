@@ -11,9 +11,6 @@ public class RecommendationRequired extends AbstractEvent {
 
     private Long id;
     private Long memberId;
-    private String location;
-    private Date travelDate;
-    private Integer budget;
-    private Integer groupSize;
-    private String details;
+    private String contents;
+    private String type;
 }

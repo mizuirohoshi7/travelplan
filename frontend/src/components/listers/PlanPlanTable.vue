@@ -69,11 +69,11 @@
                     { text: "id", value: "id" },
                     { text: "memberId", value: "memberId" },
                     { text: "location", value: "location" },
-                    { text: "travelDate", value: "travelDate" },
+                    { text: "startDay", value: "startDay" },
+                    { text: "endDay", value: "endDay" },
                     { text: "budget", value: "budget" },
                     { text: "groupSize", value: "groupSize" },
                     { text: "details", value: "details" },
-                    { text: "aiRecommendation", value: "aiRecommendation" },
                 ],
             plan : [],
             newValue: {},
@@ -93,11 +93,11 @@
             this.newValue = {
                 'memberId': 0,
                 'location': '',
-                'travelDate': '2024-09-10',
+                'startDay': '2024-09-10',
+                'endDay': '2024-09-10',
                 'budget': 0,
                 'groupSize': 0,
                 'details': '',
-                'aiRecommendation': '',
             }
         },
         methods: {

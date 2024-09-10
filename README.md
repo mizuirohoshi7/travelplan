@@ -24,6 +24,8 @@ See the README.md files inside the each microservices directory:
 - member
 - notification
 - follow
+- recommendation
+- like
 
 
 ## Run API Gateway (Spring Gateway)
@@ -35,19 +37,39 @@ mvn spring-boot:run
 ## Test by API
 - plan
 ```
- http :8088/plans id="id" memberId="memberId" location="location" travelDate="travelDate" budget="budget" groupSize="groupSize" details="details" aiRecommendation="aiRecommendation" 
+ http :8088/plans id="id" memberId="memberId" location="location" startDay="startDay" endDay="endDay" budget="budget" groupSize="groupSize" details="details" 
+ http :8088/ 
+ http :8088/ 
+ http :8088/ 
 ```
 - member
 ```
- http :8088/members id="id" oauthId="oauthId" name="name" email="email" tokenAmount="tokenAmount" 
 ```
 - notification
 ```
- http :8088/notifications id="id" memberId="memberId" details="details" createdAt="createdAt" 
 ```
 - follow
 ```
- http :8088/follows id="id" fromId="fromId" toId="toId" 
+ http :8088/ 
+ http :8088/ 
+ http :8088/ 
+ http :8088/ 
+ http :8088/ 
+ http :8088/ 
+ http :8088/ 
+ http :8088/ 
+ http :8088/ 
+ http :8088/ 
+ http :8088/ 
+ http :8088/ 
+```
+- recommendation
+```
+ http :8088/ 
+```
+- like
+```
+ http :8088/likes id="id" memberId="memberId" recommendationId="recommendationId" 
 ```
 
 

@@ -12,19 +12,27 @@ spring:
         - id: plan
           uri: http://localhost:8082
           predicates:
-            - Path=/plans/**, 
+            - Path=/plans/**, /undefined/**, /undefined/**, /undefined/**, 
         - id: member
-          uri: http://localhost:8083
+          uri: http://localhost:0
           predicates:
-            - Path=/members/**, 
+            - Path=, 
         - id: notification
-          uri: http://localhost:8084
+          uri: http://localhost:0
           predicates:
-            - Path=/notifications/**, 
+            - Path=, 
         - id: follow
-          uri: http://localhost:8085
+          uri: http://localhost:0
           predicates:
-            - Path=/follows/**, 
+            - Path=/undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, 
+        - id: recommendation
+          uri: http://localhost:0
+          predicates:
+            - Path=/undefined/**, 
+        - id: like
+          uri: http://localhost:0
+          predicates:
+            - Path=/likes/**, 
         - id: frontend
           uri: http://localhost:8080
           predicates:
@@ -52,19 +60,27 @@ spring:
         - id: plan
           uri: http://plan:8080
           predicates:
-            - Path=/plans/**, 
+            - Path=/plans/**, /undefined/**, /undefined/**, /undefined/**, 
         - id: member
           uri: http://member:8080
           predicates:
-            - Path=/members/**, 
+            - Path=, 
         - id: notification
           uri: http://notification:8080
           predicates:
-            - Path=/notifications/**, 
+            - Path=, 
         - id: follow
           uri: http://follow:8080
           predicates:
-            - Path=/follows/**, 
+            - Path=/undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, 
+        - id: recommendation
+          uri: http://recommendation:8080
+          predicates:
+            - Path=/undefined/**, 
+        - id: like
+          uri: http://like:8080
+          predicates:
+            - Path=/likes/**, 
         - id: frontend
           uri: http://frontend:8080
           predicates:
