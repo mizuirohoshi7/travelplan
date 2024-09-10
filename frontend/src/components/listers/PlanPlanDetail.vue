@@ -12,7 +12,10 @@
                 <String label="Location" v-model="item.location" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <Date label="TravelDate" v-model="item.travelDate" :editMode="editMode" @change="change" />
+                <Date label="StartDay" v-model="item.startDay" :editMode="editMode" @change="change" />
+            </div>
+            <div>
+                <Date label="EndDay" v-model="item.endDay" :editMode="editMode" @change="change" />
             </div>
             <div>
                 <Number label="Budget" v-model="item.budget" :editMode="editMode" @change="change" />
@@ -22,9 +25,6 @@
             </div>
             <div>
                 <String label="Details" v-model="item.details" :editMode="editMode" @change="change" />
-            </div>
-            <div>
-                <String label="AiRecommendation" v-model="item.aiRecommendation" :editMode="editMode" @change="change" />
             </div>
         </v-card-text>
 

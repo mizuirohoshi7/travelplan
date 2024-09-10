@@ -20,25 +20,16 @@ public class PolicyHandler {
     @Autowired
     PlanRepository planRepository;
 
+    @Autowired
+    Repository Repository;
+
+    @Autowired
+    Repository Repository;
+
+    @Autowired
+    Repository Repository;
+
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString) {}
-
-    @StreamListener(
-        value = KafkaProcessor.INPUT,
-        condition = "headers['type']=='TokenDecreased'"
-    )
-    public void wheneverTokenDecreased_CreateRecommendation(
-        @Payload TokenDecreased tokenDecreased
-    ) {
-        TokenDecreased event = tokenDecreased;
-        System.out.println(
-            "\n\n##### listener CreateRecommendation : " +
-            tokenDecreased +
-            "\n\n"
-        );
-
-        // Sample Logic //
-        Plan.createRecommendation(event);
-    }
 }
 //>>> Clean Arch / Inbound Adaptor

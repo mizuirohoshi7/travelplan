@@ -7,15 +7,45 @@ Vue.use(Router);
 
 import PlanPlanManager from "./components/listers/PlanPlanCards"
 import PlanPlanDetail from "./components/listers/PlanPlanDetail"
+import Manager from "./components/listers/Cards"
+import Detail from "./components/listers/Detail"
+import Manager from "./components/listers/Cards"
+import Detail from "./components/listers/Detail"
+import Manager from "./components/listers/Cards"
+import Detail from "./components/listers/Detail"
 
-import MemberMemberManager from "./components/listers/MemberMemberCards"
-import MemberMemberDetail from "./components/listers/MemberMemberDetail"
 
-import NotificationNotificationManager from "./components/listers/NotificationNotificationCards"
-import NotificationNotificationDetail from "./components/listers/NotificationNotificationDetail"
 
-import FollowFollowManager from "./components/listers/FollowFollowCards"
-import FollowFollowDetail from "./components/listers/FollowFollowDetail"
+import Manager from "./components/listers/Cards"
+import Detail from "./components/listers/Detail"
+import Manager from "./components/listers/Cards"
+import Detail from "./components/listers/Detail"
+import Manager from "./components/listers/Cards"
+import Detail from "./components/listers/Detail"
+import Manager from "./components/listers/Cards"
+import Detail from "./components/listers/Detail"
+import Manager from "./components/listers/Cards"
+import Detail from "./components/listers/Detail"
+import Manager from "./components/listers/Cards"
+import Detail from "./components/listers/Detail"
+import Manager from "./components/listers/Cards"
+import Detail from "./components/listers/Detail"
+import Manager from "./components/listers/Cards"
+import Detail from "./components/listers/Detail"
+import Manager from "./components/listers/Cards"
+import Detail from "./components/listers/Detail"
+import Manager from "./components/listers/Cards"
+import Detail from "./components/listers/Detail"
+import Manager from "./components/listers/Cards"
+import Detail from "./components/listers/Detail"
+import Manager from "./components/listers/Cards"
+import Detail from "./components/listers/Detail"
+
+import Manager from "./components/listers/Cards"
+import Detail from "./components/listers/Detail"
+
+import LikeLikeManager from "./components/listers/LikeLikeCards"
+import LikeLikeDetail from "./components/listers/LikeLikeDetail"
 
 
 export default new Router({
@@ -32,38 +62,180 @@ export default new Router({
                 name: 'PlanPlanDetail',
                 component: PlanPlanDetail
             },
+            {
+                path: '//',
+                name: 'Manager',
+                component: Manager
+            },
+            {
+                path: '///:id',
+                name: 'Detail',
+                component: Detail
+            },
+            {
+                path: '//',
+                name: 'Manager',
+                component: Manager
+            },
+            {
+                path: '///:id',
+                name: 'Detail',
+                component: Detail
+            },
+            {
+                path: '//',
+                name: 'Manager',
+                component: Manager
+            },
+            {
+                path: '///:id',
+                name: 'Detail',
+                component: Detail
+            },
+
+
 
             {
-                path: '/members/members',
-                name: 'MemberMemberManager',
-                component: MemberMemberManager
+                path: '//',
+                name: 'Manager',
+                component: Manager
             },
             {
-                path: '/members/members/:id',
-                name: 'MemberMemberDetail',
-                component: MemberMemberDetail
+                path: '///:id',
+                name: 'Detail',
+                component: Detail
+            },
+            {
+                path: '//',
+                name: 'Manager',
+                component: Manager
+            },
+            {
+                path: '///:id',
+                name: 'Detail',
+                component: Detail
+            },
+            {
+                path: '//',
+                name: 'Manager',
+                component: Manager
+            },
+            {
+                path: '///:id',
+                name: 'Detail',
+                component: Detail
+            },
+            {
+                path: '//',
+                name: 'Manager',
+                component: Manager
+            },
+            {
+                path: '///:id',
+                name: 'Detail',
+                component: Detail
+            },
+            {
+                path: '//',
+                name: 'Manager',
+                component: Manager
+            },
+            {
+                path: '///:id',
+                name: 'Detail',
+                component: Detail
+            },
+            {
+                path: '//',
+                name: 'Manager',
+                component: Manager
+            },
+            {
+                path: '///:id',
+                name: 'Detail',
+                component: Detail
+            },
+            {
+                path: '//',
+                name: 'Manager',
+                component: Manager
+            },
+            {
+                path: '///:id',
+                name: 'Detail',
+                component: Detail
+            },
+            {
+                path: '//',
+                name: 'Manager',
+                component: Manager
+            },
+            {
+                path: '///:id',
+                name: 'Detail',
+                component: Detail
+            },
+            {
+                path: '//',
+                name: 'Manager',
+                component: Manager
+            },
+            {
+                path: '///:id',
+                name: 'Detail',
+                component: Detail
+            },
+            {
+                path: '//',
+                name: 'Manager',
+                component: Manager
+            },
+            {
+                path: '///:id',
+                name: 'Detail',
+                component: Detail
+            },
+            {
+                path: '//',
+                name: 'Manager',
+                component: Manager
+            },
+            {
+                path: '///:id',
+                name: 'Detail',
+                component: Detail
+            },
+            {
+                path: '//',
+                name: 'Manager',
+                component: Manager
+            },
+            {
+                path: '///:id',
+                name: 'Detail',
+                component: Detail
             },
 
             {
-                path: '/notifications/notifications',
-                name: 'NotificationNotificationManager',
-                component: NotificationNotificationManager
+                path: '//',
+                name: 'Manager',
+                component: Manager
             },
             {
-                path: '/notifications/notifications/:id',
-                name: 'NotificationNotificationDetail',
-                component: NotificationNotificationDetail
+                path: '///:id',
+                name: 'Detail',
+                component: Detail
             },
 
             {
-                path: '/follows/follows',
-                name: 'FollowFollowManager',
-                component: FollowFollowManager
+                path: '/likes/likes',
+                name: 'LikeLikeManager',
+                component: LikeLikeManager
             },
             {
-                path: '/follows/follows/:id',
-                name: 'FollowFollowDetail',
-                component: FollowFollowDetail
+                path: '/likes/likes/:id',
+                name: 'LikeLikeDetail',
+                component: LikeLikeDetail
             },
 
 

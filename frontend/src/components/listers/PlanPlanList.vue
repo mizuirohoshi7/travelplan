@@ -54,11 +54,11 @@
                             [ Id :  {{data.id }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ MemberId :  {{data.memberId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ Location :  {{data.location }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ TravelDate :  {{data.travelDate }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ StartDay :  {{data.startDay }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ EndDay :  {{data.endDay }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ Budget :  {{data.budget }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ GroupSize :  {{data.groupSize }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ Details :  {{data.details }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ AiRecommendation :  {{data.aiRecommendation }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
                     </v-list-item-content>
@@ -128,11 +128,11 @@
             this.newValue = {
                 'memberId': 0,
                 'location': '',
-                'travelDate': '2024-09-10',
+                'startDay': '2024-09-10',
+                'endDay': '2024-09-10',
                 'budget': 0,
                 'groupSize': 0,
                 'details': '',
-                'aiRecommendation': '',
             }
         },
         methods: {

@@ -6,10 +6,6 @@ import java.util.List;
 import javax.persistence.*;
 import lombok.Data;
 import travelplan.MemberApplication;
-import travelplan.domain.MemberCreated;
-import travelplan.domain.TokenDecreased;
-import travelplan.domain.TokenDecreasingFailed;
-import travelplan.domain.TokenIncreased;
 
 @Entity
 @Table(name = "Member_table")
@@ -28,26 +24,6 @@ public class Member {
     private String email;
 
     private Integer tokenAmount;
-
-    @PostPersist
-    public void onPostPersist() {
-        MemberCreated memberCreated = new MemberCreated(this);
-        memberCreated.publishAfterCommit();
-
-        TokenDecreased tokenDecreased = new TokenDecreased(this);
-        tokenDecreased.publishAfterCommit();
-
-        TokenDecreasingFailed tokenDecreasingFailed = new TokenDecreasingFailed(
-            this
-        );
-        tokenDecreasingFailed.publishAfterCommit();
-    }
-
-    @PostUpdate
-    public void onPostUpdate() {
-        TokenIncreased tokenIncreased = new TokenIncreased(this);
-        tokenIncreased.publishAfterCommit();
-    }
 
     public static MemberRepository repository() {
         MemberRepository memberRepository = MemberApplication.applicationContext.getBean(

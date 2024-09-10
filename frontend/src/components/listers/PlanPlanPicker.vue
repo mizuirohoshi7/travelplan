@@ -21,7 +21,10 @@
                                 Location :  {{item.location }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                TravelDate :  {{item.travelDate }}
+                                StartDay :  {{item.startDay }}
+                            </v-list-item-subtitle>
+                            <v-list-item-subtitle>
+                                EndDay :  {{item.endDay }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
                                 Budget :  {{item.budget }}
@@ -31,9 +34,6 @@
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
                                 Details :  {{item.details }}
-                            </v-list-item-subtitle>
-                            <v-list-item-subtitle>
-                                AiRecommendation :  {{item.aiRecommendation }}
                             </v-list-item-subtitle>
                         </v-list-item-content>
 

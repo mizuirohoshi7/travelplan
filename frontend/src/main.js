@@ -46,12 +46,28 @@ Vue.use(Managing);
 const pluralCaseList = []
 
 pluralCaseList.push( {plural: "plans/plans", pascal: "PlanPlan"} )
+pluralCaseList.push( {plural: "/", pascal: ""} )
+pluralCaseList.push( {plural: "/", pascal: ""} )
+pluralCaseList.push( {plural: "/", pascal: ""} )
 
-pluralCaseList.push( {plural: "members/members", pascal: "MemberMember"} )
 
-pluralCaseList.push( {plural: "notifications/notifications", pascal: "NotificationNotification"} )
 
-pluralCaseList.push( {plural: "follows/follows", pascal: "FollowFollow"} )
+pluralCaseList.push( {plural: "/", pascal: ""} )
+pluralCaseList.push( {plural: "/", pascal: ""} )
+pluralCaseList.push( {plural: "/", pascal: ""} )
+pluralCaseList.push( {plural: "/", pascal: ""} )
+pluralCaseList.push( {plural: "/", pascal: ""} )
+pluralCaseList.push( {plural: "/", pascal: ""} )
+pluralCaseList.push( {plural: "/", pascal: ""} )
+pluralCaseList.push( {plural: "/", pascal: ""} )
+pluralCaseList.push( {plural: "/", pascal: ""} )
+pluralCaseList.push( {plural: "/", pascal: ""} )
+pluralCaseList.push( {plural: "/", pascal: ""} )
+pluralCaseList.push( {plural: "/", pascal: ""} )
+
+pluralCaseList.push( {plural: "/", pascal: ""} )
+
+pluralCaseList.push( {plural: "likes/likes", pascal: "LikeLike"} )
 
 
 Vue.prototype.$ManagerLists.forEach(function(item, idx) {

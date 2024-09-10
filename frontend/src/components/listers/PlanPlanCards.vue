@@ -111,11 +111,11 @@
             me.newValue = {
                 'memberId': 0,
                 'location': '',
-                'travelDate': '2024-09-10',
+                'startDay': '2024-09-10',
+                'endDay': '2024-09-10',
                 'budget': 0,
                 'groupSize': 0,
                 'details': '',
-                'aiRecommendation': '',
             }
         },
         methods:{

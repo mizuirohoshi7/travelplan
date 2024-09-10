@@ -6,7 +6,6 @@ import java.util.List;
 import javax.persistence.*;
 import lombok.Data;
 import travelplan.NotificationApplication;
-import travelplan.domain.NotificationCreated;
 
 @Entity
 @Table(name = "Notification_table")
@@ -23,12 +22,6 @@ public class Notification {
     private String details;
 
     private Date createdAt;
-
-    @PostPersist
-    public void onPostPersist() {
-        NotificationCreated notificationCreated = new NotificationCreated(this);
-        notificationCreated.publishAfterCommit();
-    }
 
     public static NotificationRepository repository() {
         NotificationRepository notificationRepository = NotificationApplication.applicationContext.getBean(

@@ -45,40 +45,196 @@
                         Plan
                     </v-list-item>
 
-
                     <v-list-item
                         class="px-2"
-                        key="members"
-                        to="/members/members"
+                        key=""
+                        to="//"
                         @click="changeUrl()"
                         color="primary"
                         style="font-weight:700;"
                     >
-                        Member
+                        
+                    </v-list-item>
+
+                    <v-list-item
+                        class="px-2"
+                        key=""
+                        to="//"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        
+                    </v-list-item>
+
+                    <v-list-item
+                        class="px-2"
+                        key=""
+                        to="//"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        
+                    </v-list-item>
+
+
+
+
+                    <v-list-item
+                        class="px-2"
+                        key=""
+                        to="//"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        
+                    </v-list-item>
+
+                    <v-list-item
+                        class="px-2"
+                        key=""
+                        to="//"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        
+                    </v-list-item>
+
+                    <v-list-item
+                        class="px-2"
+                        key=""
+                        to="//"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        
+                    </v-list-item>
+
+                    <v-list-item
+                        class="px-2"
+                        key=""
+                        to="//"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        
+                    </v-list-item>
+
+                    <v-list-item
+                        class="px-2"
+                        key=""
+                        to="//"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        
+                    </v-list-item>
+
+                    <v-list-item
+                        class="px-2"
+                        key=""
+                        to="//"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        
+                    </v-list-item>
+
+                    <v-list-item
+                        class="px-2"
+                        key=""
+                        to="//"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        
+                    </v-list-item>
+
+                    <v-list-item
+                        class="px-2"
+                        key=""
+                        to="//"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        
+                    </v-list-item>
+
+                    <v-list-item
+                        class="px-2"
+                        key=""
+                        to="//"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        
+                    </v-list-item>
+
+                    <v-list-item
+                        class="px-2"
+                        key=""
+                        to="//"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        
+                    </v-list-item>
+
+                    <v-list-item
+                        class="px-2"
+                        key=""
+                        to="//"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        
+                    </v-list-item>
+
+                    <v-list-item
+                        class="px-2"
+                        key=""
+                        to="//"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        
                     </v-list-item>
 
 
                     <v-list-item
                         class="px-2"
-                        key="notifications"
-                        to="/notifications/notifications"
+                        key=""
+                        to="//"
                         @click="changeUrl()"
                         color="primary"
                         style="font-weight:700;"
                     >
-                        Notification
+                        
                     </v-list-item>
 
 
                     <v-list-item
                         class="px-2"
-                        key="follows"
-                        to="/follows/follows"
+                        key="likes"
+                        to="/likes/likes"
                         @click="changeUrl()"
                         color="primary"
                         style="font-weight:700;"
                     >
-                        Follow
+                        Like
                     </v-list-item>
 
 
@@ -168,24 +324,122 @@ export default {
                 ImageUrl: '',
             },
             { 
-                title: 'Member', 
+                title: '', 
                 description: '', 
-                key: 'members', 
-                route: '/members/members',
+                key: '', 
+                route: '//',
                 ImageUrl: '',
             },
             { 
-                title: 'Notification', 
+                title: '', 
                 description: '', 
-                key: 'notifications', 
-                route: '/notifications/notifications',
+                key: '', 
+                route: '//',
                 ImageUrl: '',
             },
             { 
-                title: 'Follow', 
+                title: '', 
                 description: '', 
-                key: 'follows', 
-                route: '/follows/follows',
+                key: '', 
+                route: '//',
+                ImageUrl: '',
+            },
+            { 
+                title: '', 
+                description: '', 
+                key: '', 
+                route: '//',
+                ImageUrl: '',
+            },
+            { 
+                title: '', 
+                description: '', 
+                key: '', 
+                route: '//',
+                ImageUrl: '',
+            },
+            { 
+                title: '', 
+                description: '', 
+                key: '', 
+                route: '//',
+                ImageUrl: '',
+            },
+            { 
+                title: '', 
+                description: '', 
+                key: '', 
+                route: '//',
+                ImageUrl: '',
+            },
+            { 
+                title: '', 
+                description: '', 
+                key: '', 
+                route: '//',
+                ImageUrl: '',
+            },
+            { 
+                title: '', 
+                description: '', 
+                key: '', 
+                route: '//',
+                ImageUrl: '',
+            },
+            { 
+                title: '', 
+                description: '', 
+                key: '', 
+                route: '//',
+                ImageUrl: '',
+            },
+            { 
+                title: '', 
+                description: '', 
+                key: '', 
+                route: '//',
+                ImageUrl: '',
+            },
+            { 
+                title: '', 
+                description: '', 
+                key: '', 
+                route: '//',
+                ImageUrl: '',
+            },
+            { 
+                title: '', 
+                description: '', 
+                key: '', 
+                route: '//',
+                ImageUrl: '',
+            },
+            { 
+                title: '', 
+                description: '', 
+                key: '', 
+                route: '//',
+                ImageUrl: '',
+            },
+            { 
+                title: '', 
+                description: '', 
+                key: '', 
+                route: '//',
+                ImageUrl: '',
+            },
+            { 
+                title: '', 
+                description: '', 
+                key: '', 
+                route: '//',
+                ImageUrl: '',
+            },
+            { 
+                title: 'Like', 
+                description: '', 
+                key: 'likes', 
+                route: '/likes/likes',
                 ImageUrl: '',
             },
             
