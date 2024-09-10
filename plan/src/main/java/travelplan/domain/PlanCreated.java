@@ -20,10 +20,6 @@ public class PlanCreated extends AbstractEvent {
     private String details;
     private String aiRecommendation;
 
-    public PlanCreated(Plan aggregate) {
-        super(aggregate);
-    }
-
     public PlanCreated() {
         super();
     }

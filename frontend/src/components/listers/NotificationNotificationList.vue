@@ -120,7 +120,7 @@
             this.newValue = {
                 'memberId': 0,
                 'details': '',
-                'createdAt': '2024-09-06',
+                'createdAt': '2024-09-10',
             }
         },
         methods: {
