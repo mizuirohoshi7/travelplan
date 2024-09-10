@@ -53,7 +53,7 @@ pluralCaseList.push( {plural: "/", pascal: ""} )
 
 
 pluralCaseList.push( {plural: "/", pascal: ""} )
-pluralCaseList.push( {plural: "/", pascal: ""} )
+pluralCaseList.push( {plural: "follows/follows", pascal: "FollowFollow"} )
 pluralCaseList.push( {plural: "/", pascal: ""} )
 pluralCaseList.push( {plural: "/", pascal: ""} )
 pluralCaseList.push( {plural: "/", pascal: ""} )

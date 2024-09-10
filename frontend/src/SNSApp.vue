@@ -94,13 +94,13 @@
 
                     <v-list-item
                         class="px-2"
-                        key=""
-                        to="//"
+                        key="follows"
+                        to="/follows/follows"
                         @click="changeUrl()"
                         color="primary"
                         style="font-weight:700;"
                     >
-                        
+                        Follow
                     </v-list-item>
 
                     <v-list-item
@@ -352,10 +352,10 @@ export default {
                 ImageUrl: '',
             },
             { 
-                title: '', 
+                title: 'Follow', 
                 description: '', 
-                key: '', 
-                route: '//',
+                key: 'follows', 
+                route: '/follows/follows',
                 ImageUrl: '',
             },
             { 

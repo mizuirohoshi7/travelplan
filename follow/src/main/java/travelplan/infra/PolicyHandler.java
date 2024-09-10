@@ -21,7 +21,7 @@ public class PolicyHandler {
     Repository Repository;
 
     @Autowired
-    Repository Repository;
+    FollowRepository followRepository;
 
     @Autowired
     Repository Repository;

@@ -51,7 +51,7 @@ mvn spring-boot:run
 - follow
 ```
  http :8088/ 
- http :8088/ 
+ http :8088/follows id="id" fromId="fromId" toId="toId" 
  http :8088/ 
  http :8088/ 
  http :8088/ 

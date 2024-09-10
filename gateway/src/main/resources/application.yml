@@ -24,7 +24,7 @@ spring:
         - id: follow
           uri: http://localhost:0
           predicates:
-            - Path=/undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, 
+            - Path=/undefined/**, /follows/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, 
         - id: recommendation
           uri: http://localhost:0
           predicates:
@@ -72,7 +72,7 @@ spring:
         - id: follow
           uri: http://follow:8080
           predicates:
-            - Path=/undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, 
+            - Path=/undefined/**, /follows/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, /undefined/**, 
         - id: recommendation
           uri: http://recommendation:8080
           predicates:

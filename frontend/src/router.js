@@ -18,8 +18,8 @@ import Detail from "./components/listers/Detail"
 
 import Manager from "./components/listers/Cards"
 import Detail from "./components/listers/Detail"
-import Manager from "./components/listers/Cards"
-import Detail from "./components/listers/Detail"
+import FollowFollowManager from "./components/listers/FollowFollowCards"
+import FollowFollowDetail from "./components/listers/FollowFollowDetail"
 import Manager from "./components/listers/Cards"
 import Detail from "./components/listers/Detail"
 import Manager from "./components/listers/Cards"
@@ -106,14 +106,14 @@ export default new Router({
                 component: Detail
             },
             {
-                path: '//',
-                name: 'Manager',
-                component: Manager
+                path: '/follows/follows',
+                name: 'FollowFollowManager',
+                component: FollowFollowManager
             },
             {
-                path: '///:id',
-                name: 'Detail',
-                component: Detail
+                path: '/follows/follows/:id',
+                name: 'FollowFollowDetail',
+                component: FollowFollowDetail
             },
             {
                 path: '//',

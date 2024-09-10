@@ -22,5 +22,23 @@ public class PolicyHandler {
 
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString) {}
+
+    @StreamListener(
+        value = KafkaProcessor.INPUT,
+        condition = "headers['type']=='TokenDecreased'"
+    )
+    public void wheneverTokenDecreased_CreateRecommendation(
+        @Payload TokenDecreased tokenDecreased
+    ) {
+        TokenDecreased event = tokenDecreased;
+        System.out.println(
+            "\n\n##### listener CreateRecommendation : " +
+            tokenDecreased +
+            "\n\n"
+        );
+
+        // Sample Logic //
+        Recommendation.createRecommendation(event);
+    }
 }
 //>>> Clean Arch / Inbound Adaptor
