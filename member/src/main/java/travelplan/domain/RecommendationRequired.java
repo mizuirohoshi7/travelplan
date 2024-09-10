@@ -15,4 +15,5 @@ public class RecommendationRequired extends AbstractEvent {
     private Date travelDate;
     private Integer budget;
     private Integer groupSize;
+    private String details;
 }
